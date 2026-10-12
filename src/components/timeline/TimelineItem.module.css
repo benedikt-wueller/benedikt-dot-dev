@@ -1,0 +1,37 @@
+.timelineItem {
+    padding: 0.625rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.timelineItem.muted {
+    opacity: 0.45;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.timelineItem.muted:hover {
+    opacity: 1;
+}
+
+.dateWrapper {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+
+.date {
+    white-space: nowrap;
+    position: relative;
+}
+
+.timelineItem.muted .date {
+    opacity: 0.75;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+}
